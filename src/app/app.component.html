@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="top">
+    <button class="btn-theme" (click)="onChangeTheme()">
+      <div
+        class="btn-theme-state"
+        [ngClass]="{moveleft : !isWhiteTheme}"
+      ></div>
+    </button>
+  </div>
+  <div class="wrapper">
+    <div class="card-container">
+      <div class="card">
+        <div class="card-header">
+          <img src="seagul.png" alt="seagul image" width="96" height="96" />
+          <h1 class="card-title">Sign In</h1>
+        </div>
+        <div class="card-body">
+          <input type="text" class="input" placeholder="Email" />
+          <input type="text" class="input" placeholder="Password" />
+          <div class="actions">
+            <a href="#" class="link">Forgot password?</a>
+            <button class="btn-submit">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="under-card">
+        <a href="#" class="link">Or create an account</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.content {
+  background-color: $color-body;
+}
+
+.btn-theme {
+  background-color: $color-btn-theme;
+  border-color: $color-btn-theme-border;
+}
+
+.btn-theme-state {
+  background-color: $color-btn-theme-in;
+}
+
+.card {
+  border-color: $color-card-border;
+  background-color: $color-card-background;
+}
+
+.card-title {
+  color: $color-title;
+}
+
+.input {
+  color: $color-form;
+  border-color: $color-form-border;
+  background-color: $color-card-background;
+}
+
+.btn-submit {
+  color: $color-btn-submit;
+  background-color: $color-primary;
+}
+
+.link {
+  color: $color-primary;
+}
