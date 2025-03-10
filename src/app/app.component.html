@@ -14,14 +14,27 @@
           <img src="seagul.png" alt="seagul image" width="96" height="96" />
           <h1 class="card-title">Sign In</h1>
         </div>
-        <div class="card-body">
-          <input type="text" class="input" placeholder="Email" />
-          <input type="text" class="input" placeholder="Password" />
+        <form class="card-body" action=""
+        [formGroup]="signInForm"
+        (ngSubmit)="onSubmit()">
+          {{ signInForm.status }}
+          <input
+            type="text"
+            class="input"
+            placeholder="Email"
+            formControlName="email"
+          />
+          <input
+            type="text"
+            class="input"
+            placeholder="Password"
+            formControlName="password"
+          />
           <div class="actions">
             <a href="#" class="link">Forgot password?</a>
-            <button class="btn-submit">Submit</button>
+            <button class="btn-submit" type="submit">Sign In</button>
           </div>
-        </div>
+        </form>
       </div>
       <div class="under-card">
         <a href="#" class="link">Or create an account</a>
