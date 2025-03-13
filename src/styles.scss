@@ -1,1 +1,32 @@
 @import "./styles/reset";
+@import "./styles/fonts";
+@import "./styles/theme";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.content {
+  background-color: var(--color-body);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 420px;
+  height: 534px;
+  padding: 10px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-primary);
+  padding: 10px 12px;
+}

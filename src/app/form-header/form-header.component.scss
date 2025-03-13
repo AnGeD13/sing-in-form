@@ -1,0 +1,13 @@
+.form-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  row-gap: 16px;
+}
+
+.form-title {
+  font-size: 33px;
+  line-height: 38px;
+  color: var(--color-title);
+}

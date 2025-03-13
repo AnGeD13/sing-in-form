@@ -1,44 +1,12 @@
 <div class="content">
-  <div class="top">
-    <button class="btn-theme" (click)="onChangeTheme()">
-      <div
-        class="btn-theme-state"
-        [ngClass]="{moveleft : !isWhiteTheme}"
-      ></div>
-    </button>
-  </div>
+  <app-theme-changing></app-theme-changing>
   <div class="wrapper">
-    <div class="card-container">
-      <div class="card">
-        <div class="card-header">
-          <img src="seagul.png" alt="seagul image" width="96" height="96" />
-          <h1 class="card-title">Sign In</h1>
-        </div>
-        <form class="card-body" action=""
-        [formGroup]="signInForm"
-        (ngSubmit)="onSubmit()">
-          {{ signInForm.status }}
-          <input
-            type="text"
-            class="input"
-            placeholder="Email"
-            formControlName="email"
-          />
-          <input
-            type="text"
-            class="input"
-            placeholder="Password"
-            formControlName="password"
-          />
-          <div class="actions">
-            <a href="#" class="link">Forgot password?</a>
-            <button class="btn-submit" type="submit">Sign In</button>
-          </div>
-        </form>
+    <div class="container">
+      <div class="form">
+        <app-form-header></app-form-header>
+        <app-form-body></app-form-body>
       </div>
-      <div class="under-card">
-        <a href="#" class="link">Or create an account</a>
-      </div>
+      <app-form-footer></app-form-footer>
     </div>
   </div>
 </div>

@@ -1,0 +1,19 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-submit {
+  width: 94px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-btn-submit);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+}

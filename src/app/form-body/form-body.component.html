@@ -1,0 +1,48 @@
+<form
+  class="form-body"
+  action=""
+  [formGroup]="signInForm"
+  (ngSubmit)="onSubmit()"
+>
+  <label for="email" class="inputLabel">
+    <input
+      type="email"
+      class="input"
+      placeholder="Email"
+      id="email"
+      formControlName="email"
+    />
+    <div class="error-message" *ngIf="email && email.touched">
+      <p *ngIf="email.hasError('required')">
+        Поле обязательно для заполнение
+      </p>
+      <p *ngIf="email.hasError('email')">Некорректный email</p>
+    </div>
+  </label>
+  <label for="password" class="inputLabel">
+    <input
+      type="password"
+      class="input"
+      id="password"
+      placeholder="Password"
+      formControlName="password"
+    />
+    <div class="error-message" *ngIf="password && password.touched">
+      <p *ngIf="password.hasError('required')">
+        Поле обязательно для заполнение
+      </p>
+      <p *ngIf="password.hasError('minlength')">
+        Пароль слишком короткий
+      </p>
+      <p
+        *ngIf="
+          !password.hasError('minlength') &&
+          password.hasError('pattern')
+        "
+      >
+        Пароль должен содержать заглавную букву, цифру и спецсимвол
+      </p>
+    </div>
+  </label>
+  <app-form-actions></app-form-actions>
+</form>

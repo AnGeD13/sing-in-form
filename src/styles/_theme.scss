@@ -1,36 +1,29 @@
-.content {
-  background-color: $color-body;
+[data-theme="light"] {
+  --color-body: rgba(255, 255, 255, 1);
+  --color-primary: rgba(101, 85, 143, 1);
+  --color-card-border: rgba(202, 196, 208, 1);
+  --color-card-background: rgba(254, 247, 255, 1);
+  --color-form: rgba(73, 69, 79, 1);
+  --color-form-border: rgba(121, 116, 126, 1);
+  --color-btn-submit: rgba(255, 255, 255, 1);
+  --color-title: rgba(29, 27, 32, 1);
+  --color-btn-theme: var(--color-primary);
+  --color-btn-theme-border: var(--color-primary);
+  --color-btn-theme-in: rgba(255, 255, 255, 1);
+  --color-error: rgba(179, 38, 30, 1);
 }
 
-.btn-theme {
-  background-color: $color-btn-theme;
-  border-color: $color-btn-theme-border;
-}
-
-.btn-theme-state {
-  background-color: $color-btn-theme-in;
-}
-
-.card {
-  border-color: $color-card-border;
-  background-color: $color-card-background;
-}
-
-.card-title {
-  color: $color-title;
-}
-
-.input {
-  color: $color-form;
-  border-color: $color-form-border;
-  background-color: $color-card-background;
-}
-
-.btn-submit {
-  color: $color-btn-submit;
-  background-color: $color-primary;
-}
-
-.link {
-  color: $color-primary;
+[data-theme="dark"] {
+  --color-body: rgba(0, 0, 0, 1);
+  --color-primary: rgba(208, 188, 254, 1);
+  --color-card-border: rgba(73, 69, 79, 1);
+  --color-card-background: rgba(20, 18, 24, 1);
+  --color-form: rgba(202, 196, 208, 1);
+  --color-form-border: rgba(147, 143, 153, 1);
+  --color-btn-submit: rgba(56, 30, 114, 1);
+  --color-title: rgba(230, 224, 233, 1);
+  --color-btn-theme: rgba(54, 52, 59, 1);
+  --color-btn-theme-border: rgba(147, 143, 153, 1);
+  --color-btn-theme-in: rgba(147, 143, 153, 1);
+  --color-error: rgba(242, 184, 181, 1);
 }
